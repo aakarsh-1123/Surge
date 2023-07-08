@@ -59,6 +59,6 @@ Please ensure that you have the necessary dependencies installed before running 
 
 Please note that the provided datasets are for demonstration purposes only, and you may need to replace them with your own datasets or modify the code accordingly.
 
-For any questions or issues, please feel free to [open an issue](https://github.com/yourusername/repo-name/issues) in this repository.
+For any questions or issues, please feel free to [open an issue](https://github.com/aakarsh-1123/Surge/issues) in this repository.
 
 Happy exploring and experimenting!
