@@ -11,9 +11,9 @@ Both datasets are  CSV files in which one column is separated from the other by 
 Result-  
 | Algorithm           | Accuracy | Precision | Recall | F1 Score |
 |---------------------|----------|-----------|--------|----------|
-| Logistic Regression | 0.992      | 0.994    | 0.99   | 0.992     |
-| SVM                 | 99%      | 0.99      | 0.96   | 0.98     |
-| Random Forest       | Varies   | Varies    | Varies | Varies   |
+| Logistic Regression | 0.992    | 0.994     | 0.99   | 0.992    |
+| SVM                 | 0.992    | 0.995     | 0.99   | 0.992    |
+| Random Forest       | 0.991    | 0.993     | 0.989  | 0.991    |
 
 
 ## Approach
