@@ -4,7 +4,7 @@ This repository contains the code implementation for a machine-learning model th
 
 ## LogReg1 , SVM1 and RandomForest1
 
-Combustor1 dataset - Noise-  https://drive.google.com/file/d/1_EpPyRzdzToxxPlf2GOGJ2ZCYuvQ7KtC/view?usp=drive_link
+Combustor1 dataset - Noise-        https://drive.google.com/file/d/1_EpPyRzdzToxxPlf2GOGJ2ZCYuvQ7KtC/view?usp=drive_link
                      Instability-  https://drive.google.com/file/d/1050DPRuIzoumNgAnzkfg2MVIGPZdPvUP/view?usp=drive_link
                      
 Both datasets are  CSV files in which one column is separated from the other by a comma. They have 3276800 rows (pressure recorded at these many times) and 9 columns (1st column is time and the rest eight are pressures at different locations of the combustor). Extracted the first column and stored it in an array. Similarly, extracted the 7th column and stored it in another array. Used statistical features for building the model and calculated them (mean, sd, and rms) for every 500 pressure values at different times. Built a data frame with statistical features as columns and added a new column to it which had their label (0-noise, 1-unstable). Did this for both the stable(noise) and unstable datasets and merged the two data frames after shuffling them. Now extracted input(mean,rms, and sd) and output(labels) from the shuffled data frame. Split input and output datasets into training and testing data. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions. 
@@ -16,12 +16,11 @@ Result-
 | Random Forest       | 0.991    | 0.993     | 0.989  | 0.991    |
 
 
-## Approach
+## LogReg2, SVM2 and RandomForest2
 
-The following approaches were used in this project:
-1. Logistic Regression, SVM, and Random Forest: These algorithms were implemented to classify the data based on pressure wave amplitude.
-2. Convolutional Neural Network (CNN): The CNN algorithm was implemented for classification based on pattern recognition of pressure-time plots.
-3. Dataset: Both single and double combustor datasets were used, with the data split into training and testing subsets.
+Combustor2 dataset - Noise-  
+                     Instability-  https://drive.google.com/file/d/1050DPRuIzoumNgAnzkfg2MVIGPZdPvUP/view?usp=drive_link
+
 
 ## Results
 
