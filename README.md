@@ -1,6 +1,6 @@
-# Detection of Transition from Noise to Thermoacoustic Instability in a Combustor using CNN
+# Detection of Transition from Combustion Noise to Thermoacoustic Instability in a Partially Premixed Turbulent Combustor using Convolutional Neural Networks
 
-This repository contains the code implementation for a machine learning model that classifies pressure-time data points as noise or instability, specifically focusing on the patterns of pressure-time plots. The model utilizes logistic regression, support vector machines (SVM), random forest, and convolutional neural network (CNN) algorithms.
+This repository contains the code implementation for a machine-learning model that classifies pressure-time data points as noise or instability. The model utilizes logistic regression, support vector machines (SVM), and random forest for classification on the basis of the pressure wave amplitudes- high amplitude corresponding to instability and low to noise. Classification on the basis of pressure amplitude itself means that the model is built for a single combustor and so is a combustor-dependent model. On the other hand, to utilize the model for any general combustor, a combustor-independent model was built using Convolutional Neural Networks which classifies data points on the basis of patterns of pressure-time plots.
 
 ## Objective
 
@@ -62,4 +62,3 @@ Please note that the provided datasets are for demonstration purposes only, and 
 For any questions or issues, please feel free to [open an issue](https://github.com/yourusername/repo-name/issues) in this repository.
 
 Happy exploring and experimenting!
-# Surge
