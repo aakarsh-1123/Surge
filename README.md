@@ -2,12 +2,15 @@
 
 This repository contains the code implementation for a machine-learning model that classifies pressure-time data points as noise or instability. The model utilizes logistic regression, support vector machines (SVM), and random forest for classification on the basis of the pressure wave amplitudes- high amplitude corresponding to instability and low to noise. Classification on the basis of pressure amplitude itself means that the model is built for a single combustor and so is a combustor-dependent model. On the other hand, to utilize the model for any general combustor, a combustor-independent model was built using Convolutional Neural Networks which classifies data points on the basis of patterns of pressure-time plots.
 
-## LogReg1 , SVM1 and RandomForest1
-
 Combustor1 dataset - Noise-        https://drive.google.com/file/d/1_EpPyRzdzToxxPlf2GOGJ2ZCYuvQ7KtC/view?usp=drive_link
                      Instability-  https://drive.google.com/file/d/1050DPRuIzoumNgAnzkfg2MVIGPZdPvUP/view?usp=drive_link
-                     
-Both datasets are  CSV files in which one column is separated from the other by a comma. They have 3276800 rows (pressure recorded at these many times) and 9 columns (1st column is time and the rest eight are pressures at different locations of the combustor). Extracted the first column and stored it in an array. Similarly, extracted the 7th column and stored it in another array. Used statistical features for building the model and calculated them (mean, sd, and rms) for every 500 pressure values at different times. Built a data frame with statistical features as columns and added a new column to it which had their label (0-noise, 1-unstable). Did this for both the stable(noise) and unstable datasets and merged the two data frames after shuffling them. Now extracted input(mean,rms, and sd) and output(labels) from the shuffled data frame. Split input and output datasets into training and testing data. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions. 
+
+Combustor2 dataset - Noise-        https://drive.google.com/file/d/1CTeKge7S-BPFoqFfyJREx3xqeYyNqMpo/view?usp=sharing
+                     Instability-  https://drive.google.com/file/d/1rE1ug9wIHS6fwWoyuRvBcuX80vOLshjM/view?usp=sharing
+
+## LogReg1 , SVM1 and RandomForest1
+
+Both datasets of combustor1 are  CSV files in which one column is separated from the other by a comma. They have 3276800 rows (pressure recorded at these many times) and 9 columns (1st column is time and the rest eight are pressures at different locations of the combustor). Extracted the first column and stored it in an array. Similarly, extracted the 7th column and stored it in another array. Used statistical features for building the model and calculated them (mean, sd, and rms) for every 500 pressure values at different times. Built a data frame with statistical features as columns and added a new column to it which had their label (0-noise, 1-unstable). Did this for both the stable(noise) and unstable datasets and merged the two data frames after shuffling them. Now extracted input(mean,rms, and sd) and output(labels) from the shuffled data frame. Split input and output datasets into training and testing data. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions. 
 Result-  
 | Algorithm           | Accuracy | Precision | Recall | F1 Score |
 |---------------------|----------|-----------|--------|----------|
@@ -18,8 +21,13 @@ Result-
 
 ## LogReg2, SVM2 and RandomForest2
 
-Combustor2 dataset - Noise-  
-                     Instability-  https://drive.google.com/file/d/1050DPRuIzoumNgAnzkfg2MVIGPZdPvUP/view?usp=drive_link
+Both datasets of combustor2 are text files in which one column is separated from the other by tab space. They have 491520 rows (pressure recorded at these many times) and 4 columns (1st column is time and the rest three are pressures at different locations of the combustor). Extracted the first column and stored it in an array. Similarly, extracted the 2nd column and stored it in another array. Used statistical features for building the model and calculated them (mean, sd, and rms) for every 75 pressure values at different times. Built a data frame with statistical features as columns and added a new column to it which had their label (0-noise, 1-unstable). Did this for both the stable(noise) and unstable datasets and merged the two data frames after shuffling them. Now we have a shuffled dataset that contains pressure values of combustor2. Following this the data frame corresponding to combustor1 and combustor2 are merged and shuffled from where inputs and labels are extracted and the dataset is split into training and testing data. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions. 
+Result-  
+| Algorithm           | Accuracy | Precision | Recall | F1 Score |
+|---------------------|----------|-----------|--------|----------|
+| Logistic Regression | 0.898    | 0.923     | 0.868  | 0.895    |
+| SVM                 | 0.902    | 0.933     | 0.86   | 0.895    |
+| Random Forest       | 0.899    | 0.921     | 0.872  | 0.896    |
 
 
 ## Results
