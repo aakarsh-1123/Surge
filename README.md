@@ -30,17 +30,16 @@ Result-
 | Random Forest       | 0.899    | 0.921     | 0.872  | 0.896    |
 
 
-## Results
+## LogReg3, SVM3 and RandomForest3
 
-The achieved accuracies in the case of classification algorithms were as follows:
-- Logistic Regression and SVM: 99% accuracy for the single combustor dataset and 89.9% accuracy for the double combustor dataset.
-- Random Forest: The accuracy achieved varied based on the specific dataset.
+ Instead of splitting the dataset into training and testing data, I have used the dataframe of combustor1 for training and that of combustor2 for testing. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions.
+Result-
+| Algorithm           | Accuracy | Precision | Recall | F1 Score |
+|---------------------|----------|-----------|--------|----------|
+| Logistic Regression | 0.746    | 0.812     | 0.632  | 0.713    |
+| SVM                 | 0.759    | 0.760     | 0.758  | 0.759    |
+| Random Forest       | 0.762    | 0.725     | 0.844  | 0.78     |
 
-For the CNN algorithm, the achieved accuracies were approximately:
-- 99.4% accuracy for the single combustor dataset
-- 91.3% accuracy for the double combustor dataset
-
-Furthermore, the trained models successfully detected the transition from noise to thermoacoustic instability in a new dataset, achieving an accuracy of 75.95% using the CNN algorithm.
 
 ## Repository Structure
 
