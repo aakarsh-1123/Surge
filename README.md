@@ -32,13 +32,24 @@ Result-
 
 ## LogReg3, SVM3 and RandomForest3
 
- Instead of splitting the dataset into training and testing data, I have used the dataframe of combustor1 for training and that of combustor2 for testing. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions.
+Instead of splitting the dataset into training and testing data, I have used the dataframe of combustor1 for training and that of combustor2 for testing. Now for each algorithm - Logistic Regression, SVM, and Random Forest used the scikit learn inbuilt functions.
 Result-
 | Algorithm           | Accuracy | Precision | Recall | F1 Score |
 |---------------------|----------|-----------|--------|----------|
 | Logistic Regression | 0.746    | 0.812     | 0.632  | 0.713    |
 | SVM                 | 0.759    | 0.760     | 0.758  | 0.759    |
 | Random Forest       | 0.762    | 0.725     | 0.844  | 0.78     |
+
+## Combustor Independent model (Images_generation, CNN1, CNN2 and CNN3)
+
+Extracted time and pressure arrays from all the 4 datasets( noise and unstable datasets from each of the 2 combustors) and sliced them into many sub-arrays, each of them used for plotting pressure versus time values. All the plots are converted into images and saved in png format. Link for the image files of all the 4 datasets are given below:-
+Combustor1 Noise-
+Combustor1 Instability-
+Combustor2 Noise-
+Combustor2 Instability-
+
+###CNN1 - 
+
 
 
 ## Repository Structure
