@@ -75,7 +75,7 @@ This project aims at classifying the data points as noise or instability for any
 
 The code in this repository requires the following dependencies:
 - Python (version X.X.X)
-- Libraries: NumPy, Pandas, Scikit-learn, TensorFlow, Keras
+- Libraries: NumPy, Matplotlib, Pandas, Scikit-learn, TensorFlow, Keras
 
 Please ensure that you have the necessary dependencies installed before running the code.
 
@@ -83,7 +83,7 @@ Please ensure that you have the necessary dependencies installed before running 
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies using the provided `requirements.txt` file.
-3. Navigate to the specific code file you wish to run (e.g., `logistic_regression.py`).
+3. Navigate to the specific code file you wish to run.
 4. Run the code using a Python interpreter.
 5. The results and any generated models will be displayed or saved based on the implementation.
 
