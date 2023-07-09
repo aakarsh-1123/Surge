@@ -60,6 +60,13 @@ Merged the input and output array  corresponding to combustor1 with that of comb
 ### CNN3
 Used the input and output array corresponding to combustor1 as training dataset and that of combustor2 as testing dataset. Fed datas into the cnn model built using keras.
 
+### Result-
+
+| Code  | Training Accuracy | Testing Accuracy | 
+|-------|-------------------|------------------|
+| CNN1  |    0.9998         |      0.994       | 
+| CNN2  |    0.9997         |      0.913       | 
+| CNN3  |    0.9985         |      0.76        | 
 
 ## Repository Structure
 
