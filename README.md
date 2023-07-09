@@ -68,19 +68,8 @@ Used the input and output array corresponding to combustor1 as training dataset 
 | CNN2  |    0.9997         |      0.913       | 
 | CNN3  |    0.9985         |      0.76        | 
 
-## Repository Structure
-
-This repository is organized as follows:
-
-- `logistic_regression.py`: Implementation of logistic regression algorithm for classification based on pressure wave amplitude.
-- `svm.py`: Implementation of support vector machines (SVM) algorithm for classification based on pressure wave amplitude.
-- `random_forest.py`: Implementation of random forest algorithm for classification based on pressure wave amplitude.
-- `cnn.py`: Implementation of the convolutional neural network (CNN) algorithm for classification based on pattern recognition of pressure-time plots.
-- `single_combustor_dataset`: Folder containing the single combustor dataset, split into training and testing subsets.
-- `double_combustor_dataset`: Folder containing the double combustor dataset, combined and split into training and testing subsets.
-- `new_dataset`: Folder containing a new dataset for testing the trained models.
-
-Feel free to explore the code and datasets provided in this repository.
+## Conclusion
+This project aims at classifying the data points as noise or instability for any general combustor by pattern recognition of pressure-time plots using convolutional neural networks.
 
 ## Requirements
 
