@@ -42,14 +42,23 @@ Result-
 
 ## Combustor Independent model (Images_generation, CNN1, CNN2 and CNN3)
 
-Extracted time and pressure arrays from all the 4 datasets( noise and unstable datasets from each of the 2 combustors) and sliced them into many sub-arrays, each of them used for plotting pressure versus time values. All the plots are converted into images and saved in png format. Link for the image files of all the 4 datasets are given below:-
+Extracted time and pressure arrays from all the 4 datasets( noise and unstable datasets from each of the 2 combustors) and sliced them into many sub-arrays, each of them used for plotting pressure versus time values. All the plots are converted into images and saved in png format. Pixel value of each image is 288*432. Link for the image files of all the 4 datasets are given below:-
 Combustor1 Noise-
 Combustor1 Instability-
 Combustor2 Noise-
 Combustor2 Instability-
 
-###CNN1 - 
+### Working of the CNN model
+The model contains 2 convolutional layers followed by 2 fully connected layers. Both the convolutional layers are passed through a 3*3 filter, a relu activation and a maxpooling layer of 2*2 dimension. The output generated from the convolutional layers are flattened and passed through 2 ANN layers, one with relu activation and the classifier layer with sigmoid activation as it does binary classification.
 
+### CNN1
+Used the image pixel arrays of pressure-time plots of combustor1 as input and their labels as output. Shuffled them in such a manner that each array is still linked to its label as their index is same in their respective arrays. Split datasets into training and testing data and fed into the cnn model built using keras. 
+
+### CNN2
+Merged the input and output array  corresponding to combustor1 with that of combustor2 separately. Shuffled them and split it into training and testing dataset. Fed datas into the cnn model built using keras.
+
+### CNN3
+Used the input and output array corresponding to combustor1 as training dataset and that of combustor2 as testing dataset. Fed datas into the cnn model built using keras.
 
 
 ## Repository Structure
