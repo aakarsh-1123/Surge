@@ -44,8 +44,11 @@ Result-
 
 Extracted time and pressure arrays from all the 4 datasets( noise and unstable datasets from each of the 2 combustors) and sliced them into many sub-arrays, each of them used for plotting pressure versus time values. All the plots are converted into images and saved in png format. Pixel value of each image is 288*432. Link for the image files of all the 4 datasets are given below:-
 Combustor1 Noise- https://drive.google.com/drive/folders/1kQYHcJNo2UeQu_M-uJ0Jq5-sj1I3Mg6h?usp=sharing
+
 Combustor1 Instability- https://drive.google.com/drive/folders/1IqayKsCNk0L1nyDbCfMUozwrkrMfAzb0?usp=sharing
+
 Combustor2 Noise- https://drive.google.com/drive/folders/1tpLiOirzc40_NpG4uXA_3985-4IvWS2o?usp=sharing
+
 Combustor2 Instability- https://drive.google.com/drive/folders/1LyuacRl5bwkmqfVo1-q3dUL6PSY2zH7g?usp=sharing
 
 ### Working of the CNN model
